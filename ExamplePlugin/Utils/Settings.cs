@@ -35,6 +35,7 @@ namespace RegularCallouts.Stuff
         internal static bool StolenDiplomaticCar;
         internal static bool TrafficStopAssistance;
         internal static bool LostSuspect;
+        internal static string Language;
         public static readonly string CalloutVersion = "1.1.6";
 
         internal static Keys EndCalloutKey;
@@ -68,6 +69,8 @@ namespace RegularCallouts.Stuff
             Settings.StolenDiplomaticCar = initializationFile.ReadBoolean("Callout Enable/Disable", "StolenDiplomaticCar", true);
             Settings.TrafficStopAssistance = initializationFile.ReadBoolean("Callout Enable/Disable", "TrafficStopAssistance", true);
             Settings.LostSuspect = initializationFile.ReadBoolean("Callout Enable/Disable", "LostSuspect", true);
+            Settings.Language = initializationFile.ReadString("Callout Enable/Disable", "Language", "en");
+            Game.LogTrivial("The selected language of Regular Callouts is: " + Settings.Language);
             //In the parantheses the first part is the label in the ini file, the second is the name of the variable, and the third is the default value
             EndCalloutKey = initializationFile.ReadEnum("Keybinds", "EndCalloutKey", Keys.End);
             DialogKey = initializationFile.ReadEnum("Keybinds", "DialogKey", Keys.Y);
