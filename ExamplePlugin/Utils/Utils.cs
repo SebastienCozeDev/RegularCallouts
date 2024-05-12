@@ -865,6 +865,12 @@ namespace RegularCallouts.Stuff
 
         }
 
+        public static string ConvertInUTF8(string originalString)
+        {
+            byte[] bytes = Encoding.Default.GetBytes(originalString);
+            return Encoding.UTF8.GetString(bytes);
+        }
+
         public enum DecalTypes
         {
             splatters_blood = 1010,
