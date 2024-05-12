@@ -96,6 +96,7 @@
     <Compile Include="Utils\HackingMsg.cs" />
     <Compile Include="Utils\HeliCam.cs" />
     <Compile Include="Utils\Common.cs" />
+    <Compile Include="Utils\LanguageManager.cs" />
     <Compile Include="Utils\Natives.cs" />
     <Compile Include="Utils\Scaleform.cs" />
     <Compile Include="Utils\VehicleExtensions.cs" />

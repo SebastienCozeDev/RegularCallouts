@@ -80,38 +80,16 @@ namespace RegularCallouts.Callouts
 
         string[] Titles = { "ASEA", "PRAIRIE", "CHINO", "TAMPA", "HABANERO", "NEON", "INFERNUS", "ALPHA", "SURGE" };
 
-        private List<string> dialogwithFire5 = new List<string>
-        {
-            "~g~Firefighter:~s~ Hello Officer, we already freed everyone. Two of them require medical assistance and one of them died on impact. (1/3)",
-            "~g~Firefighter:~s~ Everything is secure from our side, we'll let you handle the cleanups. (2/3)",
-            "~b~You:~s~ I'll take care of it. Thanks. (3/3)"
-        };
+        private List<string> dialogwithFire5 = LanguageManager.AccidentOnHighwayCallout__dialogwithFire5;
         private int dialogwithfire5index;
 
-        private List<string> dialogwithdriver2 = new List<string>
-        {
-            "~b~You:~s~ Good day to you. Can you tell me what happened? (1/4)",
-            "~o~Driver:~s~ The car on the roof lost control and I hit it afterwards, when I tried to break the other cars drove into me. (2/4)",
-            "~b~You:~s~ Could you please stay if I have further questions? (3/4)",
-            "~o~Driver:~s~ Absolutely. (4/4)"
-        };
+        private List<string> dialogwithdriver2 = LanguageManager.AccidentOnHighwayCallout__dialogwithdriver2;
         private int dialogwithdriver2index;
 
-        private List<string> dialogwithcop2 = new List<string>
-        {
-            "~g~Officer:~s~ Hey good to see you here. As you can see we already secured the scene (1/4)",
-            "~g~Officer:~s~ We still don't know what happened, you can talk to the victims and medics. (2/4)",
-            "~g~Officer:~s~ When you are done you can tell the other officer to remove the roadblock. (3/4)",
-            "~b~You:~s~ Alright thanks for the information (4/4)."
-        };
+        private List<string> dialogwithcop2 = LanguageManager.AccidentOnHighwayCallout__dialogwithcop2;
         private int dialogwithcop2index;
 
-        private List<string> dialogwithmedic = new List<string>
-        {
-            "~b~You:~s~ What information can you give me? (1/3)",
-            "~g~Medic:~s~ This one died when we arrived, two of them have minor injures and the ones sitting on the ground need to go to the hospital. (2/3)",
-            "~g~Medic:~s~ If you are done questioning them come back to me so we can transport them. (3/3)",
-        };
+        private List<string> dialogwithmedic = LanguageManager.AccidentOnHighwayCallout__dialogwithmedic;
         private int dialogwithmedicindex;
 
         public override bool OnBeforeCalloutDisplayed()

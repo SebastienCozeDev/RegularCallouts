@@ -16,6 +16,7 @@ namespace RegularCallouts
             Game.LogTrivial("Plugin RegularCallouts "+ Stuff.Settings.CalloutVersion +" has been initialised.");
             Game.LogTrivial("Go on duty to fully load RegularCallouts.");
             RegularCallouts.Stuff.Settings.Initialize();
+            RegularCallouts.Stuff.LanguageManager.Initialize();
 
         }
         public override void Finally()
