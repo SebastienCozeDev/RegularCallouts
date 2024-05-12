@@ -63,14 +63,7 @@ namespace RegularCallouts.Callouts
         private string CalloutLocation;
         private Blip SpawnBlip;
         string[] Titles = { "ASEA", "PRAIRIE", "CHINO", "TAMPA", "HABANERO", "NEON", "BALLER", "ALPHA", "SURGE" };
-        private List<string> DialogWithOwner = new List<string>
-        {
-            "~b~You:~s~ Good morning Sir, can you tell me what happened? (1/5)",
-            "~r~Driver:~s~ This dog just ran out o the street, I had no chance to react anymore. I'm sorry I'm still a bit shocked. (2/5)",
-            "~b~You:~s~ Do you need an ambulance? (3/5)",
-            "~r~Driver:~s~ No thanks. (4/5)",
-            "~b~You:~s~ I'll have a look around, stay here for a moment (5/5)"
-        };
+        private List<string> DialogWithOwner = LanguageManager.AnimalCarCrash__DialogWithOwner;
         private int DialogWithOwnerIndex;
 
         public override bool OnBeforeCalloutDisplayed()

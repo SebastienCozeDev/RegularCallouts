@@ -15,6 +15,7 @@ namespace RegularCallouts.Stuff
         internal static List<string> AccidentOnHighwayCallout__dialogwithdriver2;
         internal static List<string> AccidentOnHighwayCallout__dialogwithcop2;
         internal static List<string> AccidentOnHighwayCallout__dialogwithmedic;
+        internal static List<string> AnimalCarCrash__DialogWithOwner;
 
         internal static void Initialize()
         {
@@ -46,6 +47,14 @@ namespace RegularCallouts.Stuff
                 Utils.ConvertInUTF8(initializationFile.ReadString(Settings.Language, "dialogwithmedic_1", "~b~You:~s~ What information can you give me? (1/3)")),
                 Utils.ConvertInUTF8(initializationFile.ReadString(Settings.Language, "dialogwithmedic_2", "~g~Medic:~s~ This one died when we arrived, two of them have minor injures and the ones sitting on the ground need to go to the hospital. (2/3)")),
                 Utils.ConvertInUTF8(initializationFile.ReadString(Settings.Language, "dialogwithmedic_3", "~g~Medic:~s~ If you are done questioning them come back to me so we can transport them. (3/3)"))
+            };
+            LanguageManager.AnimalCarCrash__DialogWithOwner = new List<string>
+            {
+                Utils.ConvertInUTF8(initializationFile.ReadString(Settings.Language, "DialogWithOwner_1", "~b~You:~s~ Good morning Sir, can you tell me what happened? (1/5)")),
+                Utils.ConvertInUTF8(initializationFile.ReadString(Settings.Language, "DialogWithOwner_2", "~r~Driver:~s~ This dog just ran out o the street, I had no chance to react anymore. I'm sorry I'm still a bit shocked. (2/5)")),
+                Utils.ConvertInUTF8(initializationFile.ReadString(Settings.Language, "DialogWithOwner_3", "~b~You:~s~ Do you need an ambulance? (3/5)")),
+                Utils.ConvertInUTF8(initializationFile.ReadString(Settings.Language, "DialogWithOwner_4", "~r~Driver:~s~ No thanks. (4/5)")),
+                Utils.ConvertInUTF8(initializationFile.ReadString(Settings.Language, "DialogWithOwner_5", "~b~You:~s~ I'll have a look around, stay here for a moment (5/5)"))
             };
         }
 
